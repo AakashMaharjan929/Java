@@ -6,16 +6,19 @@ public class InetAddressGetByName {
         try {
             // InetAddress address = InetAddress.getByName("aakashmaharjan.com.np");
             // System.out.println( address );
-            // InetAddress address = InetAddress.getByName("172.67.166.16");
+            // InetAddress address = InetAddress.getByName("74.125.68.104");
             // System.out.println( address.getHostName() );
             // System.out.println( address );
-            InetAddress[] addresses = InetAddress.getAllByName("www.google.com");
-            for( InetAddress address : addresses ){
-                System.out.println( address );
-            }
+            // InetAddress[] addresses = InetAddress.getAllByName("www.google.com");
+            // for( InetAddress address : addresses ){
+            //     System.out.println( address );
+            // }
+
+            InetAddress address = InetAddress.getLocalHost();
+            System.out.println( address );
 
         } catch ( UnknownHostException ex ){
-            System.out.println("Could not find 172.67.166.16");
+            System.out.println("Could not find www.google.com");
         }
     }
 }
